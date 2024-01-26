@@ -1,4 +1,4 @@
-module github.com/gethinode/hinode
+module github.com/ten2ten2/hinode
 
 go 1.19
 
