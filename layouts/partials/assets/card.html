@@ -126,7 +126,7 @@
     <!-- Render stacked / default card -->
     <div class="card {{ with $color }}bg-{{ . }} text-bg-{{ . }}{{ end }} {{ $class }}">
         {{- if $thumbnail -}}
-            {{- partial "assets/image.html" (dict "url" $thumbnail "ratio" (or $ratio "16x9") "wrapper" "card-img-wrap" "class" "card-img-top" "title" (or $alt $title) "loading" $loading) -}}
+            {{- partial "assets/image.html" (dict "url" $thumbnail "ratio" "wrapper" "card-img-wrap" "class" "card-img-top" "title" (or $alt $title) "loading" $loading) -}}
         {{- else if $icon -}}
             <div class="card-icon  p-{{ $padding }}">
                 {{- partial "assets/icon.html" (dict "icon" (printf "%s fa-4x" $icon)) -}}
