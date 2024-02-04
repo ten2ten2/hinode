@@ -20,6 +20,9 @@
     disableTemplate = ["katex"]
     [modules.katex]
         state = "defer"
+    [modules.flexsearch]
+        frontmatter = false
+        filter = ""
     [modules.fontawesome]
         inline = true
         debug = true
@@ -129,7 +132,7 @@
         padding = "3"
         header = "none"
         footer = "tags"
-        orientation = "horizontal-sm"
+        orientation = "horizontal"
         style = "border-1 card-emphasize"
         homepage = 3
         separator = false
